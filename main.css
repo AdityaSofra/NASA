@@ -1,0 +1,459 @@
+/* Default Styles (Desktop) 1024 px*/
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Abril Fatface;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.menu {
+    display: flex;
+}
+
+#toggle-label,
+#toggle {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.logo {
+    height: 75px;
+}
+
+.search-icon {
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+
+    display: block;
+    margin-bottom: -19px;
+    margin-left: 20px;
+    padding: 20px 20px;
+    background-color: #1a5dad;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #ee293d;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro, .launch, .earth-info {
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 37px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 21px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 300;
+    text-align: center;
+}
+
+.launch {
+    background-image: url(../working/images/earth_frame.png); 
+    padding: 69px;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    text-align: left;
+}
+
+.launch h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.launch p {
+    font-size: 21.5px;
+}
+
+.earth-info {
+    background-image: url(../working/images/space_frame.png);
+    padding: 69px;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+}
+
+.earth-info h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.earth-info p {
+    font-size: 21.5px;
+}
+
+button {
+    font-family: Abril Fatface;
+    font-size: 15.5px;
+    font-weight: 200;
+    padding: 10px 20px;
+    background-color: #ee293d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #772029;
+}
+
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.video-section .description {
+    padding-left: 70px;
+    float: left;
+    width: 45%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+.solar-system {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.solar-system h2 {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 26px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.planet {
+    flex: 1 1 23%; 
+    margin: 1%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.planet span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+    color: white;
+}
+
+.planet:hover span {
+    color: #ee293d;
+}
+
+#earth {
+    background-image: url(../working/images/earth.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+#moon {
+    background-image: url(../working/images/moon\ .png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+#mars {
+    background-image: url(../working/images/mars.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+#universe {
+    background-image: url(../working/images/universe.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+#horizontal-line {
+    width: calc(100% - 35px); 
+    height: 2px;
+    background-color: rgb(99, 99, 99);
+    margin: 0 20px; 
+}
+
+
+footer {
+    font-size: 19px;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    transition: transform 0.2s ease; 
+}
+
+.social-icons img:hover {
+    transform: scale(1.3); 
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links {
+    margin-top: 11px; 
+}
+
+.footer-links a:hover {
+    color: #ee293d; 
+    text-decoration: underline; 
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 640px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #toggle-label {
+        display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    #toggle:checked ~ nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu{
+        max-width: 105px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav a {
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #333;
+    }
+
+    nav a:hover {
+        background-color: #ee293d;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .launch h2,
+    .earth-info h2 {
+        font-size: 24px;
+    }
+
+    .launch p,
+    .earth-info p {
+        font-size: 20px;
+    }
+
+    #horizontal-line {
+        width: calc(100% - 40px); 
+        height: 2px;
+        background-color: rgb(99, 99, 99);
+        margin: 0 20px; 
+    }
+    
+    .video-container iframe {
+        padding-top: 13px;
+        align-items: center;
+        padding-right: 59px;
+        width: 119%;
+        height: 130%;
+    }
+
+    .video-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-section .description {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .solar-system h2{
+        text-align: center;
+    }
+
+    .planet {
+        flex: 2 2 40%;
+        height: auto;
+    
+        
+    }
+
+    .planet span {
+        font-size: 23px;
+    }
+
+    #earth {
+        background-image: url(../working/images/earth.png);
+        background-size: cover;
+        background-position: center;
+        height: 280px;
+    }
+    
+    #moon {
+        background-image: url(../working/images/moon\ .png);
+        background-size: cover;
+        background-position: center;
+        height: 280px;
+    }
+    
+    #mars {
+        background-image: url(../working/images/mars.png);
+        background-size: cover;
+        background-position: center;
+        height: 280px;
+    }
+    
+    #universe {
+        background-image: url(../working/images/universe.png);
+        background-size: cover;
+        background-position: center;
+        height: 280px;
+    }
+
+  
+    
+}
+
+/********** Tablet ************/
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 15px 10px;
+        font-size: 18px;
+        background-color: #1a5dad;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        background-color: #ee293d;
+    }
+    
+    .video-container iframe {
+        padding-top: 9px;
+        align-items: center;
+        padding-right: 59px;
+        width: 119%;
+        height: 130%;
+    }
+
+    .description{
+        text-align: center;
+        margin-left: -35px;
+    }
+
+}
